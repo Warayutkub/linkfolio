@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warayut Burattanang — Portfolio</title>
+    <meta name="description" content="Warayut Burattanang — selected work, writing, and a few thoughts on craft." />
+    <meta property="og:title" content="Warayut Burattanang — Portfolio" />
+    <meta property="og:description" content="Selected work, writing, and a few thoughts on craft." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#F8FAFC" />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0A0A'/%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='17' font-weight='700' fill='%23FFFFFF'%3EW%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" id="navBrand" href="../">W. — Portfolio</a>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== Hero ===== -->
+        <section class="hero container section">
+            <div class="hero__content">
+                <span class="badge" id="heroBadge"></span>
+                <h1 class="hero__title" id="heroTitle"></h1>
+                <p class="hero__bio" id="heroBio"></p>
+                <a class="hero__cta" id="heroCta" href="#work">
+                    <span class="hero__cta-label">View Selected Work</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                        <path d="M12 5v14M5 12l7 7 7-7" />
+                    </svg>
+                </a>
+            </div>
+            <aside class="hero__stats" id="heroStats" aria-label="Quick stats">
+                <!-- Rendered by scripts/portfolio.js using portfolio.hero.stats -->
+            </aside>
+        </section>
+
+        <!-- ===== About ===== -->
+        <section class="container section" id="about">
+            <header class="section-head">
+                <p class="section__eyebrow" id="aboutEyebrow"></p>
+                <h2 class="section__title" id="aboutTitle"></h2>
+            </header>
+            <div class="about">
+                <div class="about__portrait-wrap">
+                    <div class="about__portrait">
+                        <img src="../assets/profile.webp" alt="Warayut Burattanang" />
+                    </div>
+                </div>
+                <div class="about__body" id="aboutBody"></div>
+            </div>
+        </section>
+
+        <!-- ===== Selected Work ===== -->
+        <section class="container section" id="work">
+            <header class="section-head">
+                <p class="section__eyebrow" id="workEyebrow"></p>
+                <h2 class="section__title" id="workTitle"></h2>
+            </header>
+            <div class="work__grid" id="workGrid">
+                <!-- Rendered by scripts/portfolio.js -->
+            </div>
+        </section>
+
+        <!-- ===== Skills ===== -->
+        <section class="container section" id="skills">
+            <header class="section-head">
+                <p class="section__eyebrow" id="skillsEyebrow"></p>
+                <h2 class="section__title" id="skillsTitle"></h2>
+            </header>
+            <div class="skills__grid" id="skillsGrid">
+                <!-- Rendered by scripts/portfolio.js -->
+            </div>
+        </section>
+
+        <!-- ===== Activities ===== -->
+        <section class="container section" id="activities">
+            <header class="section-head">
+                <p class="section__eyebrow" id="activitiesEyebrow"></p>
+                <h2 class="section__title" id="activitiesTitle"></h2>
+            </header>
+            <ol class="activities" id="activitiesList">
+                <!-- Rendered by scripts/portfolio.js -->
+            </ol>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section class="container section contact" id="contact">
+            <header class="section-head section-head--center">
+                <p class="section__eyebrow" id="contactEyebrow"></p>
+                <h2 class="section__title" id="contactTitle"></h2>
+            </header>
+            <a class="contact__email" id="contactEmail" href="#"></a>
+            <div class="contact__socials" id="contactSocials"></div>
+            <a class="contact__back" href="../">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+                <span id="contactBackLabel">Back to Links</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; <span id="year"></span> &middot; <span id="footerName"></span> &middot; All rights reserved
+    </footer>
+
+    <script src="../scripts/data.js" defer></script>
+    <script src="../scripts/portfolio.js" defer></script>
+</body>
+</html>

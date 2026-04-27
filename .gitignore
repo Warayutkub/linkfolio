@@ -1,0 +1,51 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== Environment / Secrets =====
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.pem
+*.key
+
+# ===== Node (if you add a build pipeline later) =====
+node_modules/
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.next/
+.turbo/
+
+# ===== Misc =====
+*.bak
+*.tmp
+*.temp
+*.orig
+
+# ===== Claude Code (personal/local) =====
+.claude/
+CLAUDE.md
