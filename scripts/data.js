@@ -2,7 +2,7 @@
  * Site data — edit here, both pages auto-sync.
  *
  * NOTE on paths: Always write paths relative to the project root
- * (e.g., "assets/peronal.png"). When this file is loaded from a
+ * (e.g., "assets/profile.webp"). When this file is loaded from a
  * subfolder page like /portfolio/, the resolver at the bottom auto-prefixes
  * "../" so links keep working from any depth.
  */
@@ -25,7 +25,7 @@ const donate = {
     title: "Thanks for coffee ☕",
     note: "Scan with your banking app",
     handle: "PromptPay · 0631673569",
-    qrImage: "assets/donate-qr.jpg"
+    qrImage: "assets/donate-qr.webp"
 };
 
 /* ---------- Social links (rendered as buttons on linkfolio + contact list on portfolio) ---------- */
@@ -141,14 +141,14 @@ const projects = [
     {
         title: "FlowKlass",
         tags: ["SaaS", "Education", "Next.js"],
-        image: "/assets/projects/flowklass.png",
+        image: "assets/projects/flowklass.webp",
         description: "A turnkey SaaS for tutors and independent schools — sign up and get your own branded subdomain with teacher, student, and admin portals wired together for end-to-end school management. Built on Next.js, deployed to VPS with a SQL backend.",
         url: "https://flowklass.com/"
     },
     {
         title: "Airproof",
         tags: ["CLI", "Security", "Open Source"],
-        image: "assets/projects/airproof.png",
+        image: "assets/projects/airproof.webp",
         description: "An open-source CLI that audits JS/TS codebases for common security bugs before they ship — zero config, plain-English (and Thai) output, 80% OWASP Top 10 coverage across 19 rules. Built for the vibe-coding era where AI-generated routes quietly forget the auth check. Run `npx airproof .` — that's it.",
         url: "https://www.npmjs.com/package/airproof"
     }
