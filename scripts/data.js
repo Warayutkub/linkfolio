@@ -14,15 +14,15 @@ const personal = {
     tagline: "Product thinker · Designer · Builder",
     avatar: "assets/profile.webp",
     email: "warayut.bunrattanang.fluk@gmail.com",
-    resume: "assets/resume.pdf"
+    resume: ""
 };
 
 /* ---------- Donate (button opens a QR dialog on linkfolio) ---------- */
 /* Set `enabled: false` to hide. Drop your QR image into assets/ and update qrImage. */
 const donate = {
     enabled: true,
-    label: "Buy me a coffee",
-    title: "Thanks for coffee ☕",
+    label: "Buy me a matcha",
+    title: "Thanks for matcha 🍵",
     note: "Scan with your banking app",
     handle: "PromptPay · 0631673569",
     qrImage: "assets/donate-qr.webp"
@@ -32,7 +32,6 @@ const donate = {
 /* `label` must match an icon key in linkfolio.js ICONS map: github, linkedin, instagram, tiktok */
 const socials = [
     { label: "GitHub", url: "https://github.com/Warayutkub" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/" },
     { label: "Instagram", url: "https://www.instagram.com/wryt_fl" },
     { label: "TikTok", url: "https://www.tiktok.com/@wryt_uk" }
 ];
