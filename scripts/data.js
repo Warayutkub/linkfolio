@@ -11,7 +11,7 @@
 const personal = {
     name: "Warayut Burattanang",
     initials: "W",
-    tagline: "Designer · Developer · Writer",
+    tagline: "Product thinker · Designer · Builder",
     avatar: "assets/profile.webp",
     email: "warayut.bunrattanang.fluk@gmail.com",
     resume: "assets/resume.pdf"
