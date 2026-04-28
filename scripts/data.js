@@ -7,6 +7,48 @@
  * "../" so links keep working from any depth.
  */
 
+/* ---------- Projects ---------- */
+/* Drop image files into assets/projects/ and set `image` to its path.
+ * Leave `image` or `url` empty ("") to disable that part.
+ *
+ * Fields:
+ *   title       — required
+ *   tags        — array of strings (shown as pills)
+ *   image       — path to cover image, "" to show title placeholder
+ *   description — short blurb, 1–2 sentences
+ *   url         — link to live site or case study, "" to disable link
+ */
+const projects = [
+    {
+        title: "FlowKlass",
+        tags: ["SaaS", "Education", "Next.js"],
+        image: "assets/projects/flowklass.webp",
+        description: "A turnkey SaaS for tutors and independent schools — sign up and get your own branded subdomain with teacher, student, and admin portals wired together for end-to-end school management. Built on Next.js, deployed to VPS with a SQL backend.",
+        url: "https://flowklass.com/"
+    },
+    {
+        title: "Airproof",
+        tags: ["CLI", "Security", "Open Source"],
+        image: "assets/projects/airproof.webp",
+        description: "An open-source CLI that audits JS/TS codebases for common security bugs before they ship — zero config, plain-English (and Thai) output, 80% OWASP Top 10 coverage across 19 rules. Built for the vibe-coding era where AI-generated routes quietly forget the auth check. Run `npx airproof .` — that's it.",
+        url: "https://www.npmjs.com/package/airproof"
+    },
+    {
+        title: "Mystic Pet Shop",
+        tags: ["Personalization", "Quiz", "Fun","javascript", "html", "css"],
+        image: "assets/projects/mystic-pet-shop.webp",
+        description: "A fun MBTI-based pet personality quiz that matches you with your ideal pet companion. Answer 16 questions based on your personality type and discover which cat or dog (and accessories) are meant for you.",
+        url: "https://littleshrimpp.github.io/mystic-pet-shop/"
+    },
+    {
+        title: "SO KMUTNB Prachinburi",
+        tags: ["Internal Platform", "PDPA", "Next.js"],
+        image: "assets/projects/so-web.webp",
+        description: "Official site for the Student Organization at KMUTNB Prachinburi — a one-stop hub for activity announcements, internal management, SOP manuals, club directory, and the org chart. Built solo with an AI co-pilot on Next.js + Supabase (deployed to Vercel), with audit logging for PDPA compliance and a security review across the stack.",
+        url: "https://sokmutnbprachin.vercel.app/"
+    }
+];
+
 /* ---------- Personal info ---------- */
 const personal = {
     name: "Warayut Burattanang",
@@ -48,7 +90,7 @@ const portfolio = {
         ctaText: "View Selected Work",
         ctaTarget: "#work",
         stats: [
-            { value: "2", label: "Products shipped" },
+            { value: projects.length, label: "Products shipped" },
             { code: "npx airproof", label: "Currently shipping" },
             { value: "1", label: "Hackathon → production" }
         ]
@@ -125,33 +167,7 @@ const portfolio = {
     }
 };
 
-/* ---------- Projects ---------- */
-/* Drop image files into assets/projects/ and set `image` to its path.
- * Leave `image` or `url` empty ("") to disable that part.
- *
- * Fields:
- *   title       — required
- *   tags        — array of strings (shown as pills)
- *   image       — path to cover image, "" to show title placeholder
- *   description — short blurb, 1–2 sentences
- *   url         — link to live site or case study, "" to disable link
- */
-const projects = [
-    {
-        title: "FlowKlass",
-        tags: ["SaaS", "Education", "Next.js"],
-        image: "assets/projects/flowklass.webp",
-        description: "A turnkey SaaS for tutors and independent schools — sign up and get your own branded subdomain with teacher, student, and admin portals wired together for end-to-end school management. Built on Next.js, deployed to VPS with a SQL backend.",
-        url: "https://flowklass.com/"
-    },
-    {
-        title: "Airproof",
-        tags: ["CLI", "Security", "Open Source"],
-        image: "assets/projects/airproof.webp",
-        description: "An open-source CLI that audits JS/TS codebases for common security bugs before they ship — zero config, plain-English (and Thai) output, 80% OWASP Top 10 coverage across 19 rules. Built for the vibe-coding era where AI-generated routes quietly forget the auth check. Run `npx airproof .` — that's it.",
-        url: "https://www.npmjs.com/package/airproof"
-    }
-];
+
 
 /* ---------- Path resolver (auto-prefix for nested pages) ---------- */
 (() => {
