@@ -34,6 +34,13 @@ const projects = [
         url: "https://www.npmjs.com/package/airproof"
     },
     {
+        title: "Matchanu",
+        tags: ["SaaS", "AI Agents", "Next.js", "Go"],
+        image: "assets/projects/matchanu.webp",
+        description: "An AI-native project memory layer — connect your AI coding agent via MCP and it reads and writes project context, tasks, decisions, and architecture diagrams directly, so it never loses track of what the project is and where it's headed. Next.js frontend, Go backend, MCP server for AI integrations.",
+        url: "https://matchanu.app/"
+    },
+    {
         title: "Mystic Pet Shop",
         tags: ["Personalization", "Quiz", "Fun","javascript", "html", "css"],
         image: "assets/projects/mystic-pet-shop.webp",
